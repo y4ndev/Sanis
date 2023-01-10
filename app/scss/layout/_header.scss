@@ -1,0 +1,94 @@
+/*------------------HEADER------------------*/
+
+.header {
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    color: #ffffff;
+    font-size: 10px;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+
+  &__top::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 98.8vw;
+    left: 50%;
+    z-index: -1;
+    transform: translate(-50%, 0);
+    background-color: #000000;
+  }
+
+  &__top-town {
+    margin-right: 60px;
+  }
+
+  &__top-list {
+    display: flex;
+    margin-right: 40px;
+  }
+
+  &__top-list li {
+    margin-right: 30px;
+  }
+
+  &__top-list a {
+    color: #ffffff;
+  }
+
+  &__top-gross a {
+    color: #ffffff;
+  }
+
+  &__top-contact {
+    margin-left: auto;
+  }
+
+  &__middle {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 18px;
+  }
+
+  &__middle-logo {
+    margin: 0 auto;
+  }
+
+  &__middle-users {
+    position: absolute;
+    right: 0;
+  }
+
+  &__middle-users > *:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &__bottom {
+    margin-bottom: 13px;
+  }
+
+  &__bottom-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__bottom-list li {
+    font-size: 13px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+  }
+
+  &__bottom-list a {
+    color: #000000;
+  }
+}
+
+/*-------------------------------------------*/

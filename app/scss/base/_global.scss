@@ -1,0 +1,54 @@
+/*------------------GLOBAL------------------*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1560px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.error {
+  border: 1px #ff4019 solid !important;
+}
+
+/*--------------------------------------------*/
