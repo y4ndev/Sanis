@@ -8,19 +8,19 @@
     padding: 10px 0;
     color: #ffffff;
     font-size: 10px;
-    position: relative;
     text-transform: uppercase;
     margin-bottom: 15px;
+    height: 33px;
   }
 
-  &__top::before {
+  &::before {
     content: "";
     position: absolute;
-    height: 100%;
-    width: 98.8vw;
-    left: 50%;
+    height: 33px;
+    width: 100%;
+   
     z-index: -1;
-    transform: translate(-50%, 0);
+ 
     background-color: #000000;
   }
 

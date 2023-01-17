@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sanis</title>
+    <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body>
@@ -71,58 +72,101 @@
 
       <main class="main">
         <section class="banner">
-          <div class="banner__image">
-            <img src="./images/top-banner.png" alt="banner" />
-          </div>
-
-          <div class="banner__title">
-            <h3>Скидки до 20% на украшения из красного золота</h3>
-            <a class="banner__btn btn-primary" href="#">Подробнее</a>
+          <div class="banner__slides swiper">
+            <div class="swiper-wrapper">
+              <div class="banner__slide swiper-slide">
+                <img src="./images/top-banner.png" alt="banner" />
+                <div class="banner__title">
+                  <h3>Скидки до 20% на украшения из красного золота</h3>
+                  <a class="banner__btn btn-primary" href="#">Подробнее</a>
+                </div>
+              </div>
+              <div class="banner__slide swiper-slide">
+                <img src="./images/top-banner.png" alt="banner" />
+                <div class="container">
+                  <div class="banner__title">
+                    <h3>Скидки до 20% на украшения из красного золота</h3>
+                    <a class="banner__btn btn-primary" href="#">Подробнее</a>
+                  </div>
+                </div>
+              </div>
+              <div class="banner__slide swiper-slide">
+                <img src="./images/top-banner.png" alt="banner" />
+                <div class="banner__title">
+                  <h3>Скидки до 20% на украшения из красного золота</h3>
+                  <a class="banner__btn btn-primary" href="#">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
           </div>
         </section>
 
         <section class="cooperate">
-          <div class="cooperate__title">
-            <h2>С НАМИ СОТРУДНИЧАЮТ</h2>
-          </div>
-          <div class="cooperate__slider">
-            <div class="cooperate__slider-items">
-              <div class="cooperate__slider-item">
-                <img src="./images/coop-1.svg" alt="item" />
+          <div class="container">
+            <div class="cooperate__title">
+              <h2>С НАМИ СОТРУДНИЧАЮТ</h2>
+            </div>
+            <div class="cooperate__slider swiper">
+              <div class="cooperate__slider-items swiper-wrapper">
+                <div class="cooperate__slider-item swiper-slide">
+                  <a href="#"> <img src="./images/coop-1.svg" alt="item" /></a>
+                </div>
+                <div class="cooperate__slider-item swiper-slide">
+                  <a href="#"><img src="./images/coop-2.svg" alt="item" /></a>
+                </div>
+                <div class="cooperate__slider-item swiper-slide">
+                  <a href="#"> <img src="./images/coop-3.svg" alt="item" /></a>
+                </div>
+                <div class="cooperate__slider-item swiper-slide">
+                  <a href="#"><img src="./images/coop-4.svg" alt="item" /></a>
+                </div>
+                <div class="cooperate__slider-item swiper-slide">
+                  <a href=""><img src="./images/coop-5.svg" alt="item" /></a>
+                </div>
+                <div class="cooperate__slider-item swiper-slide">
+                  <a href="#"> <img src="./images/coop-1.svg" alt="item" /></a>
+                </div>
+                <div class="cooperate__slider-item swiper-slide">
+                  <a href="#"><img src="./images/coop-2.svg" alt="item" /></a>
+                </div>
+                <div class="cooperate__slider-item swiper-slide">
+                  <a href="#"> <img src="./images/coop-3.svg" alt="item" /></a>
+                </div>
+                <div class="cooperate__slider-item swiper-slide">
+                  <a href="#"><img src="./images/coop-4.svg" alt="item" /></a>
+                </div>
+                <div class="cooperate__slider-item swiper-slide">
+                  <a href=""><img src="./images/coop-5.svg" alt="item" /></a>
+                </div>
               </div>
-              <div class="cooperate__slider-item">
-                <img src="./images/coop-2.svg" alt="item" />
-              </div>
-              <div class="cooperate__slider-item">
-                <img src="./images/coop-3.svg" alt="item" />
-              </div>
-              <div class="cooperate__slider-item">
-                <img src="./images/coop-4.svg" alt="item" />
-              </div>
-              <div class="cooperate__slider-item">
-                <img src="./images/coop-5.svg" alt="item" />
-              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
             </div>
           </div>
         </section>
 
         <section class="contract">
-          <div class="contract__title">
-            <h2>ЗАКЛЮЧИТЕ ДОГОВОР ВСЕГО В 3 ШАГА</h2>
-          </div>
-          <div class="contract__items">
-            <div class="contract__item">
-              <img src="./images/contract-1.svg" alt="item" />
-              <span class="contract__item-text">Оставьте свою заявку</span>
-              <a class="contract__item-btn btn-primary" href="#"> Оставить заявку </a>
+          <div class="container">
+            <div class="contract__title">
+              <h2>ЗАКЛЮЧИТЕ ДОГОВОР ВСЕГО В 3 ШАГА</h2>
             </div>
-            <div class="contract__item">
-              <img src="./images/contract-2.svg" alt="item" />
-              <span class="contract__item-text">Отправьте документы</span>
-            </div>
-            <div class="contract__item">
-              <img src="./images/contract-3.svg" alt="item" />
-              <span class="contract__item-text">Подпишите договор</span>
+            <div class="contract__items">
+              <div class="contract__item">
+                <img src="./images/contract-1.svg" alt="item" />
+                <span class="contract__item-text">Оставьте свою заявку</span>
+                <a class="contract__item-btn btn-primary" href="#"> Оставить заявку </a>
+              </div>
+              <div class="contract__item">
+                <img src="./images/contract-2.svg" alt="item" />
+                <span class="contract__item-text">Отправьте документы</span>
+              </div>
+              <div class="contract__item">
+                <img src="./images/contract-3.svg" alt="item" />
+                <span class="contract__item-text">Подпишите договор</span>
+              </div>
             </div>
           </div>
         </section>
@@ -303,6 +347,7 @@
       </footer>
     </div>
 
+    <script src="libs/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
 </html>
