@@ -28,3 +28,24 @@ if (document.querySelector(".cooperate__slider") != null) {
     },
   });
 }
+
+if (document.querySelector(".novelty__slider") != null) {
+  new Swiper(".novelty__slider", {
+    slidesPerView: 4,
+    spaceBetween: 7,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+}
+
+let mapBg = document.querySelector(".address__map-bg");
+
+document.addEventListener("click", (e) => {
+  if (e.target === mapBg) {
+    mapBg.classList.add("active");
+  } else {
+    mapBg.classList.remove("active");
+  }
+});
